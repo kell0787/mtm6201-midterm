@@ -1,0 +1,106 @@
+/* Global Styles */
+
+html {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: bold;
+    margin: 1em 0 0 0.5em;
+}
+
+/* To ensure that font sizes are proportionate to each other: www.modularscale.com */
+
+h1 {
+    font-size: 4.5rem;
+}
+
+h2 {
+    font-size: 3.375rem;
+    line-height: normal;
+}
+
+h3 {
+    font-size: 2.25rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+h5 {
+    font-size: 1rem;
+    line-height: normal;
+}
+
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    /* ^ this makes it center */
+}
+
+
+
+
+/* banner images with text over top */
+.banner {
+    background-image: url(../images/food\ app\ banner.jpeg);
+    background-position: 40%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    color: white;
+}
+
+
+.download-app {
+    background-image: url(../images/food\ app\ footer\ image.jpeg);
+    background-position: 40%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    color: white;
+}
+/* navigation */
+
+/* Style the navigation bar */
+.navbar {
+    overflow: hidden;
+    background-color: white; /* Dark background color */
+}
+
+/* Navigation links style */
+.navbar a {
+    float: right; /* Align the links to the right */
+    display: block;
+    color: black; /* White text color */
+    text-align: center;
+    padding: 14px 20px; /* Padding around the links */
+    text-decoration: none; /* Remove underline from links */
+}
+
+/* Change the color of links on hover */
+.navbar a:hover {
+    background-color: #ddd; /* Light grey background on hover */
+    color: black; /* Black text color on hover */
+}
