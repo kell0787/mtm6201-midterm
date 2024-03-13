@@ -10,119 +10,119 @@
 </head>
 
 <body>
-   <!-- skip links  -->
-   <div class="container" id="Top">
-    <ul class="skip-links">
-        <li role="listitem"><a href="#main-nav" class="skip-link">Skip to navigation</a></li>
-        <li role="listitem"><a href="#main" class="skip-link">Skip to content</a></li>
-    </ul>
+    <!-- skip links  -->
+    <div class="container" id="Top">
+        <ul class="skip-links">
+            <li><a href="#main-nav" class="skip-link">Skip to navigation</a></li>
+            <li><a href="#main" class="skip-link">Skip to content</a></li>
+        </ul>
 
-    <!-- header section -->
-    <header>
-        <!-- navigation -->
-        <nav>
-            <div>
-                <a href="index.html"><img src="images/food app logo.png" alt="logo"></a>
-            </div>
-            <!-- nav links -->
-            <div>
-                <ul>
-                    <li role="listitem"><a href="index.html">Home</a></li>
-                    <li role="listitem"><a href="products.html">Products</a></li>
-                    <li role="listitem"><a href="faq.html">Faq</a></li>
-                    <li role="listitem"><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+        <!-- header section -->
+        <header>
+            <!-- navigation -->
+            <nav>
+                <div>
+                    <a href="index.html"><img src="images/food_app_logo.png" alt="logo"></a>
+                </div>
+                <!-- nav links -->
+                <div>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="faq.html">Faq</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
 
-    <main role="main" id="maincontent">
+        <main id="maincontent">
 
-    <section id="contact" class="contact-us">
-        <div class="container">
-            <h2>Contact us</h2>
+            <!-- table -->
+            <section id="contact" class="contact-us">
+                <div class="container">
+                    <h2 class="contact-heading">Contact us</h2>
 
-            <div class="contact-form">
-                <h3>Send us a message</h3>
-                <div id="feedback>" form>
+                    <div class="contact-form">
+                        <h3 class="form-heading">Send us a message</h3>
+                        <div class="feedback-form">
 
-                    <label class="feedback-label" for="fullname">Full name</label> <br>
-                    <input class="input-box" type="text" id="fullname" name="fullname"> <br>
+                            <label class="feedback-label" for="fullname">Full name</label> <br>
+                            <input class="input-box" type="text" id="fullname" name="fullname"> <br>
+
+                            <label class="feedback-label" for="email">Email</label> <br>
+                            <input class="input-box" type="text" id="email" name="email"> <br>
+
+                            <label class="feedback-label" for="your-message">Message</label> <br>
+                            <textarea name="your-message" class="message-textbox" id="your-message" cols="84"
+                                rows="8"></textarea>
+
+                            <button class="btn-send">Send</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- hours of operation -->
+
+            <div class="container">
+                <div class="hours-wrapper">
+                    <div class="hours">
+                        <h3 class="hours-heading">Hours of operation</h3>
+                        <table class="hours-table">
+                            <thead>
+                                <tr>
+                                    <th>Days</th>
+                                    <th>Hours</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Monday - Friday</td>
+                                    <td>9 AM - 6 PM</td>
+                                </tr>
+                                <tr>
+                                    <td>Saturday - Sunday</td>
+                                    <td>Closed</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
 
-                <label class="feedback-label">Email</label>
-                <input class="input-box" type="text" id="email">
-            </div>
-
-            <label class="feedback-label">Message</label> <br>
-            <textarea name="your-message" class="message-textbox" id="your-message" cols="84" rows="8"></textarea>
-
-
-            <div class="content">
-                <button class="btn-send">Send</button>
-            </div>
-            </form>
-
-        </div>
+                <div class="map-wrapper">
+                    <!-- Map embedded here -->
+                    <div class="map-container">
+                        <!-- Insert your map embed code here -->
+                        <iframe
+                            src="https://www.google.com/maps/d/embed?mid=1w1APSxLXk8v1nRQdFGRQPmnZl4Y&hl=en&ehbc=2E312F"
+                            width="640" height="480"></iframe>
+                    </div>
 
 
-        <div class="hours">
-            <h3>Hours of operation</h3>
-            <table>
-                <tr>
-                    <thead>
-                        <th>
-                            Days
-                        </th>
-                        <th>
-                            Hours
-                        </th>
-                    </thead>
-                </tr>
-                <tbody>
-                    <tr>
-                        <td>Monday - Friday</td>
-                        <td>9 AM - 6 PM</td>
-                    </tr>
-                    <tr>
-                        <td>Saturday - Sunday</td>
-                        <td>Closed</td>
-                    </tr>
-                    </thead>
-            </table>
-        </div>
-    </section>
+                    <!-- FOOTER SECTION -->
+                    <footer>
+                        <div class="container footer-container">
+                            <a href="index.html" class="footer-logo">
+                                <img src="images/food_app_logo.png" alt="Bella Olonje Food App Logo">
+                            </a>
+                            <div class="footer-social-media-icon">
+                                <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+                                    <img src="images/twitter.svg" alt="Twitter icon">
+                                </a>
+                                <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                                    <img src="images/facebook.svg" alt="Facebook icon">
+                                </a>
+                                <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                                    <img src="images/instagram.svg" alt="Instagram icon">
+                                </a>
+                            </div>
+                            <div class="footer-copyright">
+                                <p>&copy; 2024 Bellaolonje.com</p>
+                            </div>
+                        </div>
+                    </footer>
 
-    <!-- FOOTER SECTION -->
-    <footer>
-        <div class="container">
-
-            <!-- logo  -->
-            <div class="footer-logo">
-                <a href="index.html">
-                    <img src="images/food app logo.png" alt="Bella Olonje Logo"></a>
-            </div>
-
-            <!-- social media icons -->
-
-            <div class="footer-social-media-icon">
-                <a href="https://twitter.com" target="_blank" aria-label="Twitter">
-                    <img src="images/twitter.svg" alt="Twitter icon">
-                </a>
-                <a href="https://facebook.com" target="_blank" aria-label="Facebook">
-                    <img src="images/facebook.svg" alt="Facebook icon">
-                </a>
-                <a href="https://instagram.com" target="_blank" aria-label="Instagram">
-                    <img src="images/instagram.svg" alt="Instagram icon">
-                </a>
-            </div>
-
-            <!-- copyright text -->
-            <div class="footer-copyright">
-                <p>&copy; 2024 <a href="https://www.figma.com/community/file/893381127703378146"
-                        target="_blank">Bellaolonje.com</a> </p>
-            </div>
-    </footer>
 
 
 </body>
