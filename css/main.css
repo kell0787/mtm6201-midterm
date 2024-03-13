@@ -6,13 +6,6 @@ html {
     box-sizing: border-box;
 }
 
-
-
-
-
-
-
-
 /* To ensure that font sizes are proportionate to each other: www.modularscale.com */
 
 h1 {
@@ -88,10 +81,6 @@ h5 {
     color: white;
 }
 
-.phones{
-    display: flex;
-    align-items: center;
-}
 
 /* NAV */
 
@@ -129,33 +118,6 @@ nav ul li {
     height: 100%;
 }
 
-
-
-/* styling the footer */
-
-footer {
-    display: flex;
-    justify-content: space-between;
-    background-color: white;
-    align-items: center;
-}
-
-.footer-logo {
-    
-}
-
-.footer-social-media-icon {
-
-}
-
-.footer-copyright {
-    
-    
-}
-
-
-
-
 /* styling the line */
 hr {
     width: 65%;
@@ -191,5 +153,60 @@ hr {
 
 
 }
+
+
+/* styling steps section */
+.steps-section {
+    width: 100%; 
+
+.step {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; /* Space between steps */
+}
+
+.step .content {
+    flex: 1; /* Ensures content takes up the available space */
+}
+
+.step:nth-child(odd) .content {
+    order: 1; /* Keeps content on the right for odd steps */
+}
+
+.step:nth-child(even) .content {
+    flex-direction: row-reverse; /* Reverses the order for even steps */
+}
+
+.step img {
+    width: 50%; 
+    height: auto; 
+    margin: 0 20px; /* Add some space between the image and the text */
+}
+
+
+
+/* styling the footer */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    align-items: center;
+}
+
+.footer-logo {
+    
+}
+
+.footer-social-media-icon {
+
+}
+
+.footer-copyright {
+    
+    
+}
+
+
 
 
