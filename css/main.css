@@ -30,7 +30,9 @@ h5 {
     line-height: normal;
 }
 
-
+p { 
+    font-size:1.5rem;
+}
 
 .container {
     max-width: 1200px;
@@ -38,53 +40,8 @@ h5 {
     /* ^ this makes it center */
 }
 
+/* NAV STYLES */
 
-/* skip links */
-.skip-links{
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  .skip-links a{
-    position: absolute;
-    top: -3em;
-    background-color: black;
-    color:white;
-    padding: .5em 1em;
-    font-weight: bold;
-  }
-  /* display skip link when user is focused on a link */
-  .skip-links a:focus{
-    top: 0;
-  }
-
-
-/* banner images with text over top */
-.banner {
-    background-image: url(../images/food\ app\ banner.jpeg);
-    background-position: 40%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-    color: white;
-}
-
-
-.download-app {
-    background-image: url(../images/food\ app\ footer\ image.jpeg);
-    background-position: 40%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-    color: white;
-}
-
-
-/* NAV */
-
-/* Style the navigation bar */
 nav {
     display: flex;
     flex-direction: row;
@@ -118,46 +75,132 @@ nav ul li {
     height: 100%;
 }
 
-/* styling the line */
-hr {
-    width: 65%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 30px;
-    }
+/* SKIP LINKS */
+.skip-links{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .skip-links a{
+    position: absolute;
+    top: -3em;
+    background-color: black;
+    color:white;
+    padding: .5em 1em;
+    font-weight: bold;
+  }
+  /* display skip link when user is focused on a link */
+  .skip-links a:focus{
+    top: 0;
+  }
 
 
-    /* styling buttons */
-
-.playstore {
-        font-family: 'Open Sans', sans-serif;
-        background-color: #FA4A0C;
-        color: white;
-        padding: 1em;
-        font-size: 16px;
-        border: none;
-        border-radius: 25px;
-        width: 10%;
-        align-items: center;
+/* BANNER STYLES  */
+.banner {
+    position: relative;
+    background-image: url(../images/food_app_banner.jpeg);
+    background-position: 40%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    color: white;
 }
 
-.appstore{
+
+
+.download-app {
+    background-image: url(../images/food_app_footer_image.jpeg);
+    background-position: 40%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    color: white;
+}
+
+ /* BANNER STYLES 2 */
+ .banner {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+    text-align: center; 
+    height: 100vh; 
+    padding: 20px; /* Adds some padding around the content */
+}
+
+
+.centered-heading {
+    text-align: center;
+}
+ /* BUTTON STYLES */
+ .playstore {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #FA4A0C;
+    color: white;
+    padding: 1em;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;
+    width: 10%; 
+    cursor: pointer;
+}
+
+.appstore {
     font-family: 'Open Sans', sans-serif;
     background-color: transparent;
     color: white;
     padding: 1em;
     font-size: 16px;
     border-radius: 25px;
-    width: 12%;
+    width: 12%; 
     border: 2px solid #E8E8E8;
-
-
+    cursor: pointer;
 }
 
+/* Ensuring link containers do not disrupt button styles */
+.app-links a {
+    margin: 10px; /* Adds space between the buttons */
+    text-decoration: none; /* Removes underline from links */
+}
 
-/* styling steps section */
+/* Adjustments for button responsiveness */
+.app-links button {
+    min-width: 150px; 
+}
+
+@media (max-width: 768px) {
+    /* Adjusts button width for smaller screens */
+    .playstore, .appstore {
+        width: auto; /* Allows buttons to adjust width based on their content */
+        padding: 10px 20px; /* Adjusts padding for better visibility on small screens */
+    }
+}
+
+/* styling the phones to overlay over banner */
+.phones-overlay {
+    position: absolute;
+    top: 155%; /* Position the top of the phones image at 50% of the banner height */
+    left: 45%; /* Position the left side of the phones image at 50% of the banner width */
+    transform: translate(-50%, -50%) translateY(-25%); /* Center the phones image vertically and moves it up slightly */
+    z-index: 1;
+}
+
+/* LINE */
+hr {
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 650px;
+    }
+
+   
+    /* STEPS SECTION STYLES */
 .steps-section {
     width: 100%; 
+    margin-top: 150px; 
+}
 
 .step {
     display: flex;
@@ -180,33 +223,117 @@ hr {
 .step img {
     width: 50%; 
     height: auto; 
-    margin: 0 20px; /* Add some space between the image and the text */
+    margin: 0 20px; /* Adds some space between the image and the text */
+}
+
+.steps-section h3 {
+    color: black;
+}
+
+.steps-section h4 {
+    color: #FA4A0C;
+}
+
+.steps-section p {
+    color: #737373;
 }
 
 
+/* BOTTOM BANNER STYLE */
 
-/* styling the footer */
-
-footer {
-    display: flex;
-    justify-content: space-between;
-    background-color: white;
-    align-items: center;
-}
-
-.footer-logo {
+    .download-app {
+        display: flex;
+        flex-direction: column; /* Aligns children elements vertically */
+        justify-content: center; /* Centers children vertically in the container */
+        align-items: center; /* Centers children horizontally in the container */
+        text-align: center; /* Ensures the text inside the flex items is also centered */
+        padding: 20px; /* Adds some padding around the content */
+    }
     
-}
-
-.footer-social-media-icon {
-
-}
-
-.footer-copyright {
     
+    .playstore, .appstore {
+        font-family: 'Open Sans', sans-serif;
+        color: white;
+        padding: 1em;
+        font-size: 16px;
+        border-radius: 25px;
+        cursor: pointer;
+    }
     
-}
+    .playstore {
+        background-color: #FA4A0C;
+        border: none;
+        width: 10%; 
+    }
+    
+    .appstore {
+        background-color: transparent;
+        border: 2px solid #E8E8E8;
+        width: 12%; 
+    }
+    
+    /* Styling for links wrapping the buttons, adding space */
+    .download-app a {
+        margin: 10px; /* Adds space between the buttons */
+        text-decoration: none; /* Removes underline from links */
+    }
+    
+    /* Responsive adjustments for the buttons */
+    .download-app button {
+        min-width: 150px; /* Ensures buttons have a minimum width*/
+    }
+    
+    @media (max-width: 768px) {
+        /* Adjusts button width for smaller screens */
+        .download-app .playstore, .download-app .appstore {
+            width: auto; /* Allows buttons to adjust width  */
+            padding: 10px 20px; /* Adjusts padding for better visibility on small screens */
+        }
+    }
+    
 
 
 
+/* FOOTER STYLES */
 
+    .footer-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+    }
+    
+    .footer-logo, .footer-social-media-icon, .footer-copyright {
+        flex: 1;
+    }
+    
+    .footer-copyright p {
+        color: #5C5C5C; /* Sets the text color */
+    font-size: 0.8rem; /* Sets the font size to a smaller value*/
+    margin-right: 50px;
+    }
+
+    .footer-social-media-icon {
+        display: flex;
+        justify-content: center;
+        gap: 15px; /* Adjust gap between icons */
+    }
+    
+    /* Ensure the footer content doesn't get too squished on smaller screens */
+    @media (max-width: 600px) {
+        .footer-container {
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .footer-logo, .footer-social-media-icon, .footer-copyright {
+            margin-bottom: 10px;
+        }
+    
+        .footer-social-media-icon {
+            flex-direction: row;
+        }
+
+       
+    }
+    
