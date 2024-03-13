@@ -1,1 +1,22 @@
-<svg fill="none" viewBox="0 0 17 17" xmlns="http://www.w3.org/2000/svg"><path d="M14.176.824H2.68A2.252 2.252 0 0 0 .428 3.076v11.496a2.252 2.252 0 0 0 2.252 2.252h5.232v-5.84H5.934V8.706h1.978V7.028c0-.951.263-1.69.79-2.215.525-.526 1.238-.79 2.14-.79.901 0 1.485.035 1.752.1v2.029h-1.202c-.434 0-.73.092-.889.276-.158.183-.237.459-.237.826v1.452h2.253l-.3 2.278h-1.953v5.84h3.91a2.252 2.252 0 0 0 2.252-2.252V3.076A2.252 2.252 0 0 0 14.176.824Z" fill="#fa4a0c" class="fill-000000"></path></svg>
+<svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_513_114)">
+<g filter="url(#filter0_d_513_114)">
+<path d="M36.2103 5.37988H6.7512C6.04274 5.37988 5.47037 5.95225 5.47037 6.66071V36.1198C5.47037 36.8283 6.04274 37.4007 6.7512 37.4007H36.2103C36.9188 37.4007 37.4911 36.8283 37.4911 36.1198V6.66071C37.4911 5.95225 36.9188 5.37988 36.2103 5.37988ZM32.5119 14.7259H29.9543C27.949 14.7259 27.5607 15.6786 27.5607 17.0795V20.1655H32.3478L31.7234 24.9966H27.5607V37.4007H22.5695V25.0006H18.3948V20.1655H22.5695V16.6032C22.5695 12.4685 25.0951 10.215 28.7855 10.215C30.5546 10.215 32.0716 10.3471 32.5159 10.4071V14.7259H32.5119Z" fill="#FA4A0C"/>
+</g>
+</g>
+<defs>
+<filter id="filter0_d_513_114" x="1.47037" y="5.37988" width="40.0208" height="40.0208" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="4"/>
+<feGaussianBlur stdDeviation="2"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_513_114"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_513_114" result="shape"/>
+</filter>
+<clipPath id="clip0_513_114">
+<rect width="40.9866" height="40.9866" fill="white" transform="translate(0.986603 0.896973)"/>
+</clipPath>
+</defs>
+</svg>
