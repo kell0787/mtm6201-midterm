@@ -30,8 +30,8 @@ h5 {
     line-height: normal;
 }
 
-p { 
-    font-size:1.5rem;
+p {
+    font-size: 1.5rem;
 }
 
 .container {
@@ -76,23 +76,25 @@ nav ul li {
 }
 
 /* SKIP LINKS */
-.skip-links{
+.skip-links {
     list-style: none;
     margin: 0;
     padding: 0;
-  }
-  .skip-links a{
+}
+
+.skip-links a {
     position: absolute;
     top: -3em;
     background-color: black;
-    color:white;
+    color: white;
     padding: .5em 1em;
     font-weight: bold;
-  }
-  /* display skip link when user is focused on a link */
-  .skip-links a:focus{
+}
+
+/* display skip link when user is focused on a link */
+.skip-links a:focus {
     top: 0;
-  }
+}
 
 
 /* BANNER STYLES  */
@@ -119,23 +121,25 @@ nav ul li {
     color: white;
 }
 
- /* BANNER STYLES 2 */
- .banner {
+/* BANNER STYLES 2 */
+.banner {
     display: flex;
-    flex-direction: column; 
-    justify-content: center; 
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    text-align: center; 
-    height: 100vh; 
-    padding: 20px; /* Adds some padding around the content */
+    text-align: center;
+    height: 100vh;
+    padding: 20px;
+    /* Adds some padding around the content */
 }
 
 
 .centered-heading {
     text-align: center;
 }
- /* BUTTON STYLES */
- .playstore {
+
+/* BUTTON STYLES */
+.playstore {
     font-family: 'Open Sans', sans-serif;
     background-color: #FA4A0C;
     color: white;
@@ -143,7 +147,7 @@ nav ul li {
     font-size: 16px;
     border: none;
     border-radius: 25px;
-    width: 10%; 
+    width: 10%;
     cursor: pointer;
 }
 
@@ -154,36 +158,45 @@ nav ul li {
     padding: 1em;
     font-size: 16px;
     border-radius: 25px;
-    width: 12%; 
+    width: 12%;
     border: 2px solid #E8E8E8;
     cursor: pointer;
 }
 
 /* Ensuring link containers do not disrupt button styles */
 .app-links a {
-    margin: 10px; /* Adds space between the buttons */
-    text-decoration: none; /* Removes underline from links */
+    margin: 10px;
+    /* Adds space between the buttons */
+    text-decoration: none;
+    /* Removes underline from links */
 }
 
 /* Adjustments for button responsiveness */
 .app-links button {
-    min-width: 150px; 
+    min-width: 150px;
 }
 
 @media (max-width: 768px) {
+
     /* Adjusts button width for smaller screens */
-    .playstore, .appstore {
-        width: auto; /* Allows buttons to adjust width based on their content */
-        padding: 10px 20px; /* Adjusts padding for better visibility on small screens */
+    .playstore,
+    .appstore {
+        width: auto;
+        /* Allows buttons to adjust width based on their content */
+        padding: 10px 20px;
+        /* Adjusts padding for better visibility on small screens */
     }
 }
 
 /* styling the phones to overlay over banner */
 .phones-overlay {
     position: absolute;
-    top: 155%; /* Position the top of the phones image at 50% of the banner height */
-    left: 45%; /* Position the left side of the phones image at 50% of the banner width */
-    transform: translate(-50%, -50%) translateY(-25%); /* Center the phones image vertically and moves it up slightly */
+    top: 155%;
+    /* Position the top of the phones image at 50% of the banner height */
+    left: 45%;
+    /* Position the left side of the phones image at 50% of the banner width */
+    transform: translate(-50%, -50%) translateY(-25%);
+    /* Center the phones image vertically and moves it up slightly */
     z-index: 1;
 }
 
@@ -193,37 +206,42 @@ hr {
     margin-left: auto;
     margin-right: auto;
     margin-top: 650px;
-    }
+}
 
-   
-    /* STEPS SECTION STYLES */
+
+/* STEPS SECTION STYLES */
 .steps-section {
-    width: 100%; 
-    margin-top: 150px; 
+    width: 100%;
+    margin-top: 150px;
 }
 
 .step {
     display: flex;
     align-items: center;
-    margin-bottom: 20px; /* Space between steps */
+    margin-bottom: 20px;
+    /* Space between steps */
 }
 
 .step .content {
-    flex: 1; /* Ensures content takes up the available space */
+    flex: 1;
+    /* Ensures content takes up the available space */
 }
 
 .step:nth-child(odd) .content {
-    order: 1; /* Keeps content on the right for odd steps */
+    order: 1;
+    /* Keeps content on the right for odd steps */
 }
 
 .step:nth-child(even) .content {
-    flex-direction: row-reverse; /* Reverses the order for even steps */
+    flex-direction: row-reverse;
+    /* Reverses the order for even steps */
 }
 
 .step img {
-    width: 50%; 
-    height: auto; 
-    margin: 0 20px; /* Adds some space between the image and the text */
+    width: 50%;
+    height: auto;
+    margin: 0 20px;
+    /* Adds some space between the image and the text */
 }
 
 .steps-section h3 {
@@ -241,99 +259,749 @@ hr {
 
 /* BOTTOM BANNER STYLE */
 
-    .download-app {
-        display: flex;
-        flex-direction: column; /* Aligns children elements vertically */
-        justify-content: center; /* Centers children vertically in the container */
-        align-items: center; /* Centers children horizontally in the container */
-        text-align: center; /* Ensures the text inside the flex items is also centered */
-        padding: 20px; /* Adds some padding around the content */
+.download-app {
+    display: flex;
+    flex-direction: column;
+    /* Aligns children elements vertically */
+    justify-content: center;
+    /* Centers children vertically in the container */
+    align-items: center;
+    /* Centers children horizontally in the container */
+    text-align: center;
+    /* Ensures the text inside the flex items is also centered */
+    padding: 20px;
+    /* Adds some padding around the content */
+}
+
+
+.playstore,
+.appstore {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    padding: 1em;
+    font-size: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.playstore {
+    background-color: #FA4A0C;
+    border: none;
+    width: 10%;
+}
+
+.appstore {
+    background-color: transparent;
+    border: 2px solid #E8E8E8;
+    width: 12%;
+}
+
+/* Styling for links wrapping the buttons, adding space */
+.download-app a {
+    margin: 10px;
+    /* Adds space between the buttons */
+    text-decoration: none;
+    /* Removes underline from links */
+}
+
+/* Responsive adjustments for the buttons */
+.download-app button {
+    min-width: 150px;
+    /* Ensures buttons have a minimum width*/
+}
+
+@media (max-width: 768px) {
+
+    /* Adjusts button width for smaller screens */
+    .download-app .playstore,
+    .download-app .appstore {
+        width: auto;
+        /* Allows buttons to adjust width  */
+        padding: 10px 20px;
+        /* Adjusts padding for better visibility on small screens */
     }
-    
-    
-    .playstore, .appstore {
-        font-family: 'Open Sans', sans-serif;
-        color: white;
-        padding: 1em;
-        font-size: 16px;
-        border-radius: 25px;
-        cursor: pointer;
-    }
-    
-    .playstore {
-        background-color: #FA4A0C;
-        border: none;
-        width: 10%; 
-    }
-    
-    .appstore {
-        background-color: transparent;
-        border: 2px solid #E8E8E8;
-        width: 12%; 
-    }
-    
-    /* Styling for links wrapping the buttons, adding space */
-    .download-app a {
-        margin: 10px; /* Adds space between the buttons */
-        text-decoration: none; /* Removes underline from links */
-    }
-    
-    /* Responsive adjustments for the buttons */
-    .download-app button {
-        min-width: 150px; /* Ensures buttons have a minimum width*/
-    }
-    
-    @media (max-width: 768px) {
-        /* Adjusts button width for smaller screens */
-        .download-app .playstore, .download-app .appstore {
-            width: auto; /* Allows buttons to adjust width  */
-            padding: 10px 20px; /* Adjusts padding for better visibility on small screens */
-        }
-    }
-    
+}
+
 
 
 
 /* FOOTER STYLES */
 
-    .footer-container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 20px;
-    }
-    
-    .footer-logo, .footer-social-media-icon, .footer-copyright {
-        flex: 1;
-    }
-    
-    .footer-copyright p {
-        color: #5C5C5C; /* Sets the text color */
-    font-size: 0.8rem; /* Sets the font size to a smaller value*/
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.footer-logo,
+.footer-social-media-icon,
+.footer-copyright {
+    flex: 1;
+}
+
+.footer-copyright p {
+    color: #5C5C5C;
+    /* Sets the text color */
+    font-size: 0.8rem;
+    /* Sets the font size to a smaller value*/
     margin-right: 50px;
+}
+
+.footer-social-media-icon {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    /* Adjust gap between icons */
+}
+
+/* Ensure the footer content doesn't get too squished on smaller screens */
+@media (max-width: 600px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-logo,
+    .footer-social-media-icon,
+    .footer-copyright {
+        margin-bottom: 10px;
     }
 
     .footer-social-media-icon {
-        display: flex;
-        justify-content: center;
-        gap: 15px; /* Adjust gap between icons */
+        flex-direction: row;
     }
-    
-    /* Ensure the footer content doesn't get too squished on smaller screens */
-    @media (max-width: 600px) {
-        .footer-container {
-            flex-direction: column;
-            align-items: center;
-        }
-        
-        .footer-logo, .footer-social-media-icon, .footer-copyright {
-            margin-bottom: 10px;
-        }
-    
-        .footer-social-media-icon {
-            flex-direction: row;
-        }
 
-       
+
+}
+
+
+/* PRODUCT PAGE */
+
+/* styling the nav */
+
+/* styling cards */
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    /* Add margin between rows */
+}
+
+.card {
+    width: calc(30% - 10px);
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.card-body {
+    padding: 20px;
+    text-align: center;
+}
+
+.image-bottom {
+    width: 100%;
+    display: block;
+}
+
+.card-btn {
+    background-color: #FA4A0C;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.card-btn:hover {
+    background-color: orange;
+}
+
+/* styling banner */
+.product-banner {
+    background-image: url(/images/product_banner.jpeg);
+    background-size: cover;
+    /* Cover the entire element with the background image */
+    color: white;
+    /* Set text color */
+    text-align: center;
+    /* Center-align the text */
+    padding: 20px 0;
+    /* Add padding to the top and bottom */
+    font-size: 1.2em;
+    /* Adjust font size */
+    border-radius: 10px;
+    /* Add border radius for rounded corners */
+}
+
+.main-heading,
+.sub-heading {
+    margin: 0;
+    /* Remove default margins */
+}
+
+
+/* styling text */
+
+.main-heading {
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+    /* Increased text shadow for visibility */
+    opacity: 1;
+    /* Initially hide the element */
+    transition: opacity 1s ease;
+    /* Add a transition for fading effect */
+}
+
+.sub-heading {
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+    /* Increased text shadow for visibility */
+    opacity: 1;
+    /* Initially hide the element */
+    transition: opacity 1s ease;
+    /* Add a transition for fading effect */
+
+}
+
+
+/* line */
+.first-line {
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+.second-line {
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+}
+
+
+/* FAQ STYLING */
+
+/* text color */
+.faq-heading {
+    color: black;
+    /* Set the color of the heading */
+    text-align: center;
+}
+
+.faq-category {
+    color: black;
+    /* Set the color of the category */
+}
+
+.faq-question {
+    color: #FA4A0C;
+    /* Set the color of the question */
+}
+
+.faq-answer {
+    color: #737373;
+    /* Set the color of the answer */
+}
+
+
+/* CONTACT STYLING */
+
+/* contact form */
+.contact-us {
+    background-color: #f2f2f2;
+    /* Set background color */
+    padding: 20px;
+    /* Add padding */
+}
+
+.contact-heading {
+    color: black;
+    /* Set heading color */
+}
+
+.contact-form {
+    margin-top: 20px;
+    /* Add space between heading and form */
+}
+
+.form-heading {
+    color: #FA4A0C;
+    /* Set form heading color */
+}
+
+.feedback-form {
+    background-color: #fff;
+    /* Set background color */
+    padding: 20px;
+    /* Add padding */
+    border-radius: 10px;
+    /* Add border radius */
+    border: 1px solid #ddd;
+    /* Add border */
+}
+
+.feedback-label {
+    display: block;
+    /* Make label display as block element */
+    margin-bottom: 5px;
+    /* Add space below label */
+}
+
+.input-box {
+    width: 100%;
+    /* Set input width to 100% */
+    padding: 10px;
+    /* Add padding */
+    margin-bottom: 10px;
+    /* Add space below input */
+    border: 1px solid #ddd;
+    /* Add border */
+    border-radius: 5px;
+    /* Add border radius */
+}
+
+.message-textbox {
+    width: 100%;
+    /* Set textarea width to 100% */
+    padding: 10px;
+    /* Add padding */
+    margin-bottom: 10px;
+    /* Add space below textarea */
+    border: 1px solid #ddd;
+    /* Add border */
+    border-radius: 5px;
+    /* Add border radius */
+}
+
+.btn-send {
+    background-color: #FA4A0C;
+    /* Set button background color */
+    color: white;
+    /* Set button text color */
+    padding: 10px 20px;
+    /* Add padding */
+    border: none;
+    /* Remove border */
+    border-radius: 5px;
+    /* Add border radius */
+    cursor: pointer;
+    /* Change cursor to pointer on hover */
+}
+
+.btn-send:hover {
+    background-color: #ff6c40;
+    /* Change background color on hover */
+}
+
+
+/* hours of operation */
+
+.hours {
+    background-color: #f2f2f2;
+    /* Set background color */
+    padding: 10px;
+    /* Add padding */
+    border-radius: 10px;
+    /* Add border radius */
+    width: 95%;
+    /* Set width of the hours section */
+    margin: 0 auto;
+    /* Center the section */
+}
+
+.hours-heading {
+    color: #FA4A0C;
+    /* Set heading color */
+    margin-bottom: 10px;
+    /* Add space below heading */
+}
+
+.hours-table {
+    width: 100%;
+    /* Set table width to 100% */
+    border-collapse: collapse;
+    /* Collapse table borders */
+    border-radius: 10px;
+    /* Add border radius to the table */
+    border: 1px solid #ddd;
+    /* Add border color */
+}
+
+.hours-table th,
+.hours-table td {
+    border: 1px solid #ddd;
+    /* Set border color */
+    padding: 6px;
+    /* Add padding */
+    text-align: left;
+    /* Align text to the left */
+}
+
+.hours-table th {
+    background-color: white;
+    /* Set header background color */
+}
+
+.hours-table tbody tr:nth-child(even) {
+    background-color: #ffffff;
+    /* Set even row background color */
+}
+
+/* map */
+.map-container {
+    width: 400px;
+    /* Set width of the map container */
+    margin-top: 20px;
+    /* Add space between hours and map */
+    margin-left: auto;
+    /* Align the map container to the center */
+    margin-right: auto;
+    /* Align the map container to the center */
+    border-radius: 10px;
+    /* Add border radius */
+    overflow: hidden;
+    /* Hide overflow */
+    display: flex;
+    /* Use flexbox */
+    justify-content: center;
+    /* Center the content horizontally */
+}
+
+.map-container iframe {
+    width: 100%;
+    /* Make the map responsive */
+    height: 300px;
+    /* Set height of the map */
+    border: none;
+    /* Remove border */
+}
+
+
+
+/* ***************MOBILE STYLES*************** */
+
+/* Media query for screens smaller than 768px */
+@media only screen and (max-width: 768px) {
+    .banner {
+        position: relative;
+        background-color: white;
+        /* Change background color to white */
+        background-image: none;
+        /* Remove background image */
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        color: black;
+        /* Change text color to black */
     }
-    
+
+    /* Adjust button styles */
+    .playstore,
+    .appstore {
+        width: auto;
+        /* Set width to auto for responsiveness */
+        display: block;
+        /* Change buttons to block elements */
+        margin: 0 auto;
+        /* Center-align buttons */
+    }
+
+    /* Additional styles for the Playstore button */
+    .playstore {
+        background-color: #FA4A0C;
+        color: white;
+        padding: 8.5px;
+        font-size: 16px;
+        border: none;
+        border-radius: 25px;
+        cursor: pointer;
+        margin-bottom: 10px;
+        /* Add space between buttons */
+    }
+
+    /* Additional styles for the Appstore button */
+    .appstore {
+        background-color: transparent;
+        color: #FA4A0C;
+        padding: 1em;
+        font-size: 16px;
+        border-radius: 25px;
+        border: 2px solid #FA4A0C;
+        cursor: pointer;
+    }
+
+    /* Change color for "food app" and "download the bella onoje's food app now on" */
+    .banner h4,
+    .download-app h2,
+    p {
+        color: #737373;
+        /* Set text color to #737373 */
+    }
+}
+
+
+/* Media query for screens smaller than 768px */
+@media only screen and (max-width: 768px) {
+
+
+    /* NAV */
+    nav {
+        flex-direction: column;
+        /* Display navigation items vertically */
+        padding: 10px;
+        /* Reduce padding for smaller screens */
+    }
+
+    nav a {
+        margin: 10px 0;
+        /* Add vertical spacing between navigation items */
+    }
+
+    /* FIRST BANNER */
+    .banner {
+        position: relative;
+        background-color: white;
+        /* Change background color to white */
+        background-image: none;
+        /* Remove background image */
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        color: black;
+        /* Change text color to black */
+    }
+
+    /* ADJUST BUTTON STYLES*/
+    .playstore,
+    .appstore {
+        width: auto;
+        /* Set width to auto for responsiveness */
+        display: block;
+        /* Change buttons to block elements */
+        margin: 0 auto;
+        /* Center-align buttons */
+    }
+
+    /* Additional styles for the Playstore button */
+    .playstore {
+        background-color: #FA4A0C;
+        color: white;
+        padding: 8.5px;
+        font-size: 16px;
+        border: none;
+        border-radius: 25px;
+        cursor: pointer;
+        margin-bottom: 10px;
+        /* Add space between buttons */
+    }
+
+    /* Additional styles for the Appstore button */
+    .appstore {
+        background-color: transparent;
+        color: #FA4A0C;
+        padding: 1em;
+        font-size: 16px;
+        border-radius: 25px;
+        border: 2px solid #FA4A0C;
+        cursor: pointer;
+    }
+
+    /* Change color for "food app" and "download the bella onoje's food app now on" */
+    .banner h4,
+    .download-app h2 {
+        color: #737373;
+        /* Set text color to #737373 */
+    }
+
+    /* DOWNLOAD APP SECTION  */
+    #desktop-p,
+    .appstore,
+    .playstore {
+        display: none;
+    }
+
+
+    /* Additional styles for the .download-app section */
+    .download-app {
+        background-image: none;
+        /* Remove background image */
+        background-color: #252B42;
+        /* Change background color */
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        color: white;
+        /* Change text color */
+    }
+
+    /* Additional styles for the paragraph inside .download-app */
+    .download-app p {
+        color: #BDBDBD;
+        /* Change paragraph text color */
+    }
+
+    .download-app h2 {
+        color: white;
+    }
+
+    /* Additional styles for the buttons inside .download-app */
+    .playstore-link button {
+        background-color: #FA4A0C;
+        /* Set background color */
+        color: white;
+        /* Set text color */
+        margin-bottom: 10px;
+        /* Add space between buttons */
+    }
+
+    .appstore-link button {
+        background-color: transparent;
+        /* Set background color */
+        border: 2px solid #E8E8E8;
+        /* Set border */
+        color: white;
+        /* Set text color */
+    }
+
+    .download-app .button-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    /* FOOTER */
+
+    .footer-logo {
+        display: none;
+    }
+
+    /* Adjust the layout of social media icons and copyright */
+    .footer-social-media-icon {
+        align-items: center;
+    }
+
+    /* Center align the footer container contents */
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+
+    /* Center align the copyright text */
+    .footer-copyright {
+        text-align: center;
+        padding-left: 50px;
+    }
+
+    /* STEP SECTION */
+
+    /* Adjust the layout for step sections */
+    .step {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    /* Set margin between text and image */
+    .step .content {
+        order: 1;
+        /* Ensure text appears before image */
+    }
+
+    .step img {
+        order: 2;
+        /* Ensure image appears after text */
+        margin-top: 10px;
+        /* Adjust as needed */
+    }
+
+    /* BUTTONS */
+    /* Hide the buttons from the desktop version */
+    .playstore-link,
+    .appstore-link {
+        display: none;
+    }
+
+    /* Style the buttons for the mobile version */
+    .mobile-buttons {
+        text-align: center;
+        margin-top: 20px;
+        /* Adjust the margin as needed */
+    }
+
+    .buy-now {
+        font-family: 'Open Sans', sans-serif;
+        background-color: #FA4A0C;
+        color: white;
+        padding: 1em;
+        font-size: 16px;
+        border: none;
+        border-radius: 25px;
+        width: 150px;
+        /* Adjust the width as needed */
+        margin-bottom: 10px;
+        /* Adjust the margin between buttons */
+        cursor: pointer;
+
+    }
+
+
+    .try-for-free {
+        font-family: 'Open Sans', sans-serif;
+        background-color: transparent;
+        color: white;
+        padding: 1em;
+        font-size: 16px;
+        border-radius: 25px;
+        width: 12%;
+        border: 2px solid #E8E8E8;
+        cursor: pointer;
+    }
+
+}
+
+
+
+/* Styles for desktop */
+.desktop {
+    display: inline-block;
+    /* This ensures buttons appear in a line on desktop */
+}
+
+.mobile-p {
+    display: none;
+    /* Initially hide paragraph on desktop */
+}
+
+/* Styles for mobile */
+.mobile-buttons {
+    display: none;
+    /* Initially hide mobile buttons */
+}
+
+
+@media only screen and (max-width: 767px) {
+
+    /* Hide desktop buttons */
+    .desktop {
+        display: none;
+    }
+
+    /* Show mobile buttons */
+    .mobile-buttons {
+        display: block;
+    }
+
+    .mobile-p {
+        display: block;
+    }
+}
