@@ -8,22 +8,10 @@ html {
 
 
 
-*,
-*::after,
-*::before {
-    box-sizing: inherit;
-}
 
 
 
-h1,
-h2,
-h3,
-h4,
-h5 {
-    font-weight: bold;
-    margin: 1em 0 0 0.5em;
-}
+
 
 /* To ensure that font sizes are proportionate to each other: www.modularscale.com */
 
@@ -58,6 +46,24 @@ h5 {
 }
 
 
+/* skip links */
+.skip-links{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .skip-links a{
+    position: absolute;
+    top: -3em;
+    background-color: black;
+    color:white;
+    padding: .5em 1em;
+    font-weight: bold;
+  }
+  /* display skip link when user is focused on a link */
+  .skip-links a:focus{
+    top: 0;
+  }
 
 
 /* banner images with text over top */
@@ -81,26 +87,109 @@ h5 {
     padding-bottom: 5rem;
     color: white;
 }
-/* navigation */
+
+.phones{
+    display: flex;
+    align-items: center;
+}
+
+/* NAV */
 
 /* Style the navigation bar */
-.navbar {
-    overflow: hidden;
-    background-color: white; /* Dark background color */
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
+    align-items: center;
 }
 
 /* Navigation links style */
-.navbar a {
-    float: right; /* Align the links to the right */
-    display: block;
-    color: black; /* White text color */
-    text-align: center;
-    padding: 14px 20px; /* Padding around the links */
-    text-decoration: none; /* Remove underline from links */
+nav a {
+    color: black;
+    text-decoration: none;
+    /* Remove underline from links */
 }
 
 /* Change the color of links on hover */
-.navbar a:hover {
-    background-color: #ddd; /* Light grey background on hover */
-    color: black; /* Black text color on hover */
+nav a:hover {
+    color: #FA4A0C;
+    /* Light grey background on hover */
 }
+
+/* styling the orientation of navigation */
+nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    gap: 100px;
+}
+
+nav ul li {
+    height: 100%;
+}
+
+
+
+/* styling the footer */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    align-items: center;
+}
+
+.footer-logo {
+    
+}
+
+.footer-social-media-icon {
+
+}
+
+.footer-copyright {
+    
+    
+}
+
+
+
+
+/* styling the line */
+hr {
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    }
+
+
+    /* styling buttons */
+
+.playstore {
+        font-family: 'Open Sans', sans-serif;
+        background-color: #FA4A0C;
+        color: white;
+        padding: 1em;
+        font-size: 16px;
+        border: none;
+        border-radius: 25px;
+        width: 10%;
+        align-items: center;
+}
+
+.appstore{
+    font-family: 'Open Sans', sans-serif;
+    background-color: transparent;
+    color: white;
+    padding: 1em;
+    font-size: 16px;
+    border-radius: 25px;
+    width: 12%;
+    border: 2px solid #E8E8E8;
+
+
+}
+
+
