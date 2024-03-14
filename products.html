@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Food Delivery app products</title>
+    <title>Bella Olonje products</title>
     <!-- CSS  -->
     <link rel="stylesheet" href="css/main.css">
 </head>
@@ -18,9 +18,9 @@
         </ul>
 
         <!-- header section -->
-        <header>
+        <header role="banner">
             <!-- navigation -->
-            <nav>
+            <nav role="navigation">
                 <div>
                     <a href="index.html"><img src="images/food_app_logo.png" alt="logo"></a>
                 </div>
@@ -34,17 +34,16 @@
                     </ul>
                 </div>
             </nav>
-
         </header>
-        <main id="maincontent">
+        <main id="maincontent" role="main">
             
-        <div class="product-banner">
+        <div class="product-banner" role="region" aria-label="Featured Products">
             <h1 class="main-heading"> Welcome to a world of delicious food!</h1>
             <h2 class="sub-heading">Featured are some of our most popular dishes.</h2>
         </div>
         <hr class="first-line">
-        <div class="cards-container">
-            <div class="card">
+        <div class="cards-container" role="list">
+            <div class="card" role="listitem">
                 <div class="card-body">
                     <h4 class="card-title">Steak and potatoes</h4>
                     <h5 class="card-subtitle">$45.99</h5>
@@ -53,7 +52,7 @@
                 <img class="image-bottom" src="images/food_app_dish_2.jpeg" alt="Steak and potatoes">
             </div>
 
-            <div class="card">
+            <div class="card" role="listitem">
                 <div class="card-body">
                     <h4 class="card-title">Lemon & onion pizza</h4>
                     <h5 class="card-subtitle">$18.99</h5>
@@ -62,7 +61,7 @@
                 <img class="image-bottom" src="images/food_app_dish_5.jpeg" alt="Lemon & onion pizza">
             </div>
 
-            <div class="card">
+            <div class="card" role="listitem">
                 <div class="card-body">
                     <h4 class="card-title">Spicy chicken wings</h4>
                     <h5 class="card-subtitle">$20.99</h5>
@@ -73,7 +72,7 @@
         </div>
 
         <hr class="second-line">
-        <footer>
+        <footer role="contentinfo">
             <div class="container footer-container">
                 <a href="index.html" class="footer-logo">
                     <img src="images/food_app_logo.png" alt="Bella Olonje Food App Logo">
@@ -94,8 +93,6 @@
                 </div>
             </div>
         </footer>
-
-
 
 </body>
 

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Food Delivery app contact</title>
+    <title>Bella Olonje contact</title>
     <!-- CSS  -->
     <link rel="stylesheet" href="css/main.css">
 </head>
@@ -18,19 +18,19 @@
         </ul>
 
         <!-- header section -->
-        <header>
+        <header role="banner">
             <!-- navigation -->
-            <nav>
+            <nav role="navigation">
                 <div>
-                    <a href="index.html"><img src="images/food_app_logo.png" alt="logo"></a>
+                    <a href="index.html" role="link"><img src="images/food_app_logo.png" alt="logo"></a>
                 </div>
                 <!-- nav links -->
                 <div>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="products.html">Products</a></li>
-                        <li><a href="faq.html">Faq</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                    <ul role="menu">
+                        <li role="menuitem"><a href="index.html">Home</a></li>
+                        <li role="menuitem"><a href="products.html">Products</a></li>
+                        <li role="menuitem"><a href="faq.html">Faq</a></li>
+                        <li role="menuitem"><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
             </nav>
@@ -39,9 +39,9 @@
         <main id="maincontent">
 
             <!-- table -->
-            <section id="contact" class="contact-us">
+            <section id="contact" class="contact-us" role="region" aria-labelledby="contact-heading">
                 <div class="container">
-                    <h2 class="contact-heading">Contact us</h2>
+                    <h2 id="contact-heading" class="contact-heading">Contact us</h2>
 
                     <div class="contact-form">
                         <h3 class="form-heading">Send us a message</h3>
@@ -66,9 +66,9 @@
             <!-- hours of operation -->
 
             <div class="container">
-                <div class="hours-wrapper">
+                <div class="hours-wrapper" role="region" aria-labelledby="hours-heading">
                     <div class="hours">
-                        <h3 class="hours-heading">Hours of operation</h3>
+                        <h3 id="hours-heading" class="hours-heading">Hours of operation</h3>
                         <table class="hours-table">
                             <thead>
                                 <tr>
@@ -90,7 +90,7 @@
                     </div>
                 </div>
 
-                <div class="map-wrapper">
+                <div class="map-wrapper" role="region" aria-labelledby="map-heading">
                     <!-- Map embedded here -->
                     <div class="map-container">
                         <!-- Insert your map embed code here -->
@@ -98,32 +98,35 @@
                             src="https://www.google.com/maps/d/embed?mid=1w1APSxLXk8v1nRQdFGRQPmnZl4Y&hl=en&ehbc=2E312F"
                             width="640" height="480"></iframe>
                     </div>
+                    <h3 id="map-heading" class="map-heading">Location Map</h3>
+                </div>
+            </div>
 
 
-                    <!-- FOOTER SECTION -->
-                    <footer>
-                        <div class="container footer-container">
-                            <a href="index.html" class="footer-logo">
-                                <img src="images/food_app_logo.png" alt="Bella Olonje Food App Logo">
-                            </a>
-                            <div class="footer-social-media-icon">
-                                <a href="https://twitter.com" target="_blank" aria-label="Twitter">
-                                    <img src="images/twitter.svg" alt="Twitter icon">
-                                </a>
-                                <a href="https://facebook.com" target="_blank" aria-label="Facebook">
-                                    <img src="images/facebook.svg" alt="Facebook icon">
-                                </a>
-                                <a href="https://instagram.com" target="_blank" aria-label="Instagram">
-                                    <img src="images/instagram.svg" alt="Instagram icon">
-                                </a>
-                            </div>
-                            <div class="footer-copyright">
-                                <p>&copy; 2024 Bellaolonje.com</p>
-                            </div>
-                        </div>
-                    </footer>
+            <!-- FOOTER SECTION -->
+            <footer role="contentinfo">
+                <div class="container footer-container">
+                    <a href="index.html" class="footer-logo">
+                        <img src="images/food_app_logo.png" alt="Bella Olonje Food App Logo">
+                    </a>
+                    <div class="footer-social-media-icon">
+                        <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+                            <img src="images/twitter.svg" alt="Twitter icon">
+                        </a>
+                        <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                            <img src="images/facebook.svg" alt="Facebook icon">
+                        </a>
+                        <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                            <img src="images/instagram.svg" alt="Instagram icon">
+                        </a>
+                    </div>
+                    <div class="footer-copyright">
+                        <p>&copy; 2024 Bellaolonje.com</p>
+                    </div>
+                </div>
+            </footer>
 
-
+        </main>
 
 </body>
 
