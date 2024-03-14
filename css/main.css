@@ -40,6 +40,27 @@ p {
     /* ^ this makes it center */
 }
 
+
+/* HOME PAGE STYLES */
+
+/* home page animation */
+
+.banner {
+    opacity: 0;
+    animation: fadeInAnimation 1s ease forwards;
+}
+
+@keyframes fadeInAnimation {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+
 /* NAV STYLES */
 
 nav {
@@ -151,6 +172,11 @@ nav ul li {
     cursor: pointer;
 }
 
+.playstore:hover {
+    background-color: #ff6c40;
+    /* Change background color on hover */
+}
+
 .appstore {
     font-family: 'Open Sans', sans-serif;
     background-color: transparent;
@@ -163,6 +189,23 @@ nav ul li {
     cursor: pointer;
 }
 
+.app-links button {
+    display: inline-block; /* Ensures buttons are side by side */
+    margin-right: 10px; /* Adjusts spacing between buttons */
+    /* Add other styling properties for your buttons here */
+}
+
+.appstore:hover {
+    background-color: #ff6c40;
+    /* Change background color on hover */
+}
+
+
+.app-links button {
+    display: inline-block; /* Side by side by default */
+    margin-right: 10px; /* Spacing between buttons */
+    /* Add your other button styles here (e.g., padding, background) */
+}
 /* Ensuring link containers do not disrupt button styles */
 .app-links a {
     margin: 10px;
@@ -378,6 +421,25 @@ hr {
 
 /* PRODUCT PAGE */
 
+/* animation 2 PRODUCT PAGE */
+
+/* CSS for Products page */
+.card {
+    opacity: 0;
+    animation: slideInAnimation 1s ease forwards;
+}
+
+@keyframes slideInAnimation {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
 /* styling the nav */
 
 /* styling cards */
@@ -426,7 +488,7 @@ hr {
     background-image: url(/images/product_banner.jpeg);
     background-size: cover;
     /* Cover the entire element with the background image */
-    color: white;
+    color: black;
     /* Set text color */
     text-align: center;
     /* Center-align the text */
@@ -460,7 +522,7 @@ hr {
 
 .sub-heading {
     text-align: center;
-    color: white;
+    color: #ff6c40;
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
     /* Increased text shadow for visibility */
     opacity: 1;
@@ -510,6 +572,24 @@ hr {
     color: #737373;
     /* Set the color of the answer */
 }
+
+/* animation 2 FAQ*/
+.faq {
+    opacity: 0;
+    animation: fadeInAnimation 1s ease forwards;
+}
+
+@keyframes fadeInAnimation {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 
 
 /* CONTACT STYLING */
@@ -988,6 +1068,25 @@ hr {
     /* Initially hide mobile buttons */
 }
 
+.playstore {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #FA4A0C;
+    color: white;
+    padding: 1em;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;
+    width: 10%;
+    cursor: pointer;
+}
+
+.playstore:hover {
+    background-color: #ff6c40;
+    /* Change background color on hover */
+}
+
+
+
 
 @media only screen and (max-width: 767px) {
 
@@ -1005,3 +1104,35 @@ hr {
         display: block;
     }
 }
+
+/* Base styles for buttons, apply to all devices */
+.app-links button {
+    display: inline-block; /* Side by side by default */
+    margin-right: 10px; /* Spacing between buttons */
+    /* Add your other button styles here (e.g., padding, background) */
+}
+
+    hr {
+        width: 100%; /* Set width to 100% */
+    }
+
+
+/* Mobile styles using media query */
+@media screen and (max-width: 480px) {
+    .app-links {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .app-links button {
+        display: block; /* Make each button a block element to fill the width */
+        margin-right: 0; /* Remove the right margin */
+        margin-bottom: 10px; /* Add some space below each button */
+        width: auto; /* Let the button width be determined by its content or style it as needed */
+    }
+
+    .app-links button:last-child {
+        margin-bottom: 0; /* Remove the bottom margin from the last button */
+    }
+}
+
