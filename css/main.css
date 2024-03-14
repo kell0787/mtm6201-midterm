@@ -234,9 +234,9 @@ nav ul li {
 /* styling the phones to overlay over banner */
 .phones-overlay {
     position: absolute;
-    top: 155%;
+    top: 145%;
     /* Position the top of the phones image at 50% of the banner height */
-    left: 45%;
+    left: 50%;
     /* Position the left side of the phones image at 50% of the banner width */
     transform: translate(-50%, -50%) translateY(-25%);
     /* Center the phones image vertically and moves it up slightly */
