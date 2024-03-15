@@ -1262,6 +1262,9 @@ hr {
 }
 
 @media (max-width: 768px) {
+    
+    
+    
     .nav-bar {
         display: flex;
         justify-content: space-between;
@@ -1288,6 +1291,7 @@ hr {
 
     .menu li {
         margin-top: 40px;
+        font-size: 20px;
     }
 
     .menu li a {
