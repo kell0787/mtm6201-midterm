@@ -54,6 +54,7 @@ p {
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
@@ -190,8 +191,10 @@ nav ul li {
 }
 
 .app-links button {
-    display: inline-block; /* Ensures buttons are side by side */
-    margin-right: 10px; /* Adjusts spacing between buttons */
+    display: inline-block;
+    /* Ensures buttons are side by side */
+    margin-right: 10px;
+    /* Adjusts spacing between buttons */
     /* Add other styling properties for your buttons here */
 }
 
@@ -202,10 +205,13 @@ nav ul li {
 
 
 .app-links button {
-    display: inline-block; /* Side by side by default */
-    margin-right: 10px; /* Spacing between buttons */
-    /* Add your other button styles here (e.g., padding, background) */
+    display: inline-block;
+    /* Side by side by default */
+    margin-right: 10px;
+    /* Spacing between buttons */
+
 }
+
 /* Ensuring link containers do not disrupt button styles */
 .app-links a {
     margin: 10px;
@@ -234,9 +240,8 @@ nav ul li {
 /* styling the phones to overlay over banner */
 .phones-overlay {
     position: absolute;
-    top: 145%;
-    /* Position the top of the phones image at 50% of the banner height */
-    left: 50%;
+    top: 160%;
+    left: 45%;
     /* Position the left side of the phones image at 50% of the banner width */
     transform: translate(-50%, -50%) translateY(-25%);
     /* Center the phones image vertically and moves it up slightly */
@@ -420,85 +425,92 @@ hr {
 
 
 /* PRODUCT PAGE */
+.menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* Center items horizontally */
+    align-items: center;
+    /* Center items vertically */
+    gap: 20px;
+    /* Space between items */
+}
+
+.menu-item {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease;
+    flex: 1 1 calc(33.33% - 40px);
+    /* Adjusted to evenly distribute items with a margin of 20px */
+    margin: 10px;
+    /* Adjusted margin to evenly space items */
+    text-align: center;
+    /* Center-align text */
+}
+
+.menu-item h3 {
+    color: #FA4A0C;
+    margin-bottom: 10px;
+}
+
+.menu-item p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Hover effect for menu items */
+.menu-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Basic responsiveness */
+@media (min-width: 768px) {
+    .menu-item {
+        flex-basis: calc(50% - 40px);
+        /* Adjusted to evenly distribute items with a margin of 20px */
+    }
+}
+
+@media (min-width: 1024px) {
+    .menu-item {
+        flex-basis: calc(33.33% - 40px);
+        /* Adjusted to evenly distribute items with a margin of 20px */
+    }
+}
 
 /* animation 2 PRODUCT PAGE */
 
-/* CSS for Products page */
-.card {
+.menu-item {
     opacity: 0;
-    animation: slideInAnimation 1s ease forwards;
+    animation: fadeInAnimation 1s ease forwards;
 }
 
-@keyframes slideInAnimation {
+@keyframes fadeInAnimation {
     from {
         opacity: 0;
-        transform: translateX(-50px);
+        transform: translateY(20px);
     }
+
     to {
         opacity: 1;
-        transform: translateX(0);
+        transform: translateY(0);
     }
 }
 
-/* styling the nav */
 
-/* styling cards */
-.cards-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-bottom: 20px;
-    /* Add margin between rows */
-}
 
-.card {
-    width: calc(30% - 10px);
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    overflow: hidden;
-}
 
-.card-body {
-    padding: 20px;
+
+/* styling text */
+.page-heading,
+.page-subheading {
     text-align: center;
 }
 
-.image-bottom {
-    width: 100%;
-    display: block;
-}
-
-.card-btn {
-    background-color: #FA4A0C;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    margin-top: 15px;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-.card-btn:hover {
-    background-color: orange;
-}
-
-/* styling banner */
-.product-banner {
-    background-image: url(/images/product_banner.jpeg);
-    background-size: cover;
-    /* Cover the entire element with the background image */
-    color: black;
-    /* Set text color */
-    text-align: center;
-    /* Center-align the text */
-    padding: 20px 0;
-    /* Add padding to the top and bottom */
-    font-size: 1.2em;
-    /* Adjust font size */
-    border-radius: 10px;
-    /* Add border radius for rounded corners */
-}
 
 .main-heading,
 .sub-heading {
@@ -506,8 +518,6 @@ hr {
     /* Remove default margins */
 }
 
-
-/* styling text */
 
 .main-heading {
     text-align: center;
@@ -533,7 +543,7 @@ hr {
 }
 
 
-/* line */
+/* LINE */
 .first-line {
     width: 65%;
     margin-left: auto;
@@ -584,6 +594,7 @@ hr {
         opacity: 0;
         transform: translateY(20px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -831,18 +842,8 @@ hr {
 @media only screen and (max-width: 768px) {
 
 
-    /* NAV */
-    nav {
-        flex-direction: column;
-        /* Display navigation items vertically */
-        padding: 10px;
-        /* Reduce padding for smaller screens */
-    }
+    /* NAVIGATION */
 
-    nav a {
-        margin: 10px 0;
-        /* Add vertical spacing between navigation items */
-    }
 
     /* FIRST BANNER */
     .banner {
@@ -1107,14 +1108,17 @@ hr {
 
 /* Base styles for buttons, apply to all devices */
 .app-links button {
-    display: inline-block; /* Side by side by default */
-    margin-right: 10px; /* Spacing between buttons */
+    display: inline-block;
+    /* Side by side by default */
+    margin-right: 10px;
+    /* Spacing between buttons */
     /* Add your other button styles here (e.g., padding, background) */
 }
 
-    hr {
-        width: 100%; /* Set width to 100% */
-    }
+hr {
+    width: 100%;
+    /* Set width to 100% */
+}
 
 
 /* Mobile styles using media query */
@@ -1125,14 +1129,179 @@ hr {
     }
 
     .app-links button {
-        display: block; /* Make each button a block element to fill the width */
-        margin-right: 0; /* Remove the right margin */
-        margin-bottom: 10px; /* Add some space below each button */
-        width: auto; /* Let the button width be determined by its content or style it as needed */
+        display: block;
+        /* Make each button a block element to fill the width */
+        margin-right: 0;
+        /* Remove the right margin */
+        margin-bottom: 10px;
+        /* Add some space below each button */
+        width: auto;
+        /* Let the button width be determined by its content or style it as needed */
     }
 
     .app-links button:last-child {
-        margin-bottom: 0; /* Remove the bottom margin from the last button */
+        margin-bottom: 0;
+        /* Remove the bottom margin from the last button */
     }
 }
 
+/**************** FAQ MOBILE STLYES *******************/
+
+@media (max-width: 768px) {
+
+    .faq-heading,
+    .faq-category,
+    .faq-question,
+    .faq-answer {
+        font-size: 18px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .faq-category {
+        margin-top: 30px;
+    }
+
+    .faq {
+        margin-bottom: 20px;
+        padding: 15px;
+    }
+}
+
+/****************** PRODUCT MOBILE STYLES *********************/
+
+@media (max-width: 768px) {
+    .page-heading {
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .menu-item {
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    .menu-item h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .menu-item p {
+        font-size: 16px;
+        line-height: 1.4;
+    }
+}
+
+
+
+/******************* CONTACT MOBILE STYLES ***************** */
+
+
+@media (max-width: 768px) {
+
+    .contact-heading,
+    .hours-heading,
+    .map-heading {
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .feedback-form {
+        margin-top: 20px;
+    }
+
+    .input-box,
+    .message-textbox {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+    }
+
+    .btn-send {
+        width: 100%;
+        padding: 12px;
+        font-size: 16px;
+        background-color: #FA4A0C;
+        color: white;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    .hours-table {
+        width: 100%;
+    }
+    
+    .desktop-nav {
+        display: none;
+    }
+}
+
+
+
+/* hamburger menu  */
+/* Add the following style to hide the mobile-nav by default */
+
+
+/* Add the following style to hide the mobile-nav by default */
+.mobile-nav {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .nav-bar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+        position: relative;
+        padding: 12px 20px;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 100;
+        background-color: #E8E8E8;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .menu li {
+        margin-top: 40px;
+    }
+
+    .menu li a {
+        padding: 10px;
+        transition: box-shadow 0.3s ease; /* Add transition for box-shadow */
+    }
+
+    .menu li a:hover {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add box-shadow on hover */
+    }
+
+    .open-menu,
+    .close-menu {
+        display: block;
+    }
+
+    #check:checked~.menu {
+        right: 0;
+    }
+
+    /* Add this to display the mobile-nav only in mobile view */
+    .mobile-nav {
+        display: block;
+    }
+
+    #check {display: none;}
+}
