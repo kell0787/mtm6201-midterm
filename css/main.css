@@ -240,8 +240,8 @@ nav ul li {
 /* styling the phones to overlay over banner */
 .phones-overlay {
     position: absolute;
-    top: 160%;
-    left: 45%;
+    top: 140%;
+    left: 50%;
     /* Position the left side of the phones image at 50% of the banner width */
     transform: translate(-50%, -50%) translateY(-25%);
     /* Center the phones image vertically and moves it up slightly */
@@ -820,7 +820,7 @@ hr {
     /* Additional styles for the Appstore button */
     .appstore {
         background-color: transparent;
-        color: #FA4A0C;
+        color: white;
         padding: 1em;
         font-size: 16px;
         border-radius: 25px;
@@ -893,6 +893,10 @@ hr {
         cursor: pointer;
     }
 
+    .appstore:hover {
+        background-color: #ff6c40;
+        color: #fff;
+    }
     /* Change color for "food app" and "download the bella onoje's food app now on" */
     .banner h4,
     .download-app h2 {
@@ -1035,6 +1039,9 @@ hr {
 
     }
 
+    .buy-now:hover {
+        background-color: #ff6c40;
+    }
 
     .try-for-free {
         font-family: 'Open Sans', sans-serif;
@@ -1048,6 +1055,9 @@ hr {
         cursor: pointer;
     }
 
+    .try-for-free:hover {
+        background-color: #ff6c40;
+    }
 }
 
 
