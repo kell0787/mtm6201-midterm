@@ -1205,6 +1205,15 @@ hr {
 
 @media (max-width: 768px) {
     
+    .mobile-nav {
+      
+       
+        
+        background-color: #f2f2f2; /* Light gray background */
+        padding: -10px 20px;
+        margin-top: 10px;
+    }
+    
     
     
     .nav-bar {
@@ -1248,6 +1257,10 @@ hr {
     .open-menu,
     .close-menu {
         display: block;
+        color: #737373; /* Light gray color */
+        font-size: 1.5rem;
+        cursor: pointer;
+        margin-top: -150px;
     }
 
     #check:checked~.menu {
