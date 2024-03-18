@@ -1,8 +1,8 @@
 /* Global Styles */
 
 html {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+     font-size: 14px;
     box-sizing: border-box;
 }
 
@@ -10,6 +10,7 @@ html {
 
 h1 {
     font-size: 4.5rem;
+
 }
 
 h2 {
@@ -33,6 +34,11 @@ h5 {
 p {
     font-size: 1.5rem;
 }
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
 
 .container {
     max-width: 1200px;
@@ -788,10 +794,10 @@ hr {
         /* Change text color to black */
     }
 
-   
 
-  
- /* Change color for "food app" and "download the bella onoje's food app now on" */
+
+
+    /* Change color for "food app" and "download the bella onoje's food app now on" */
     .banner h4,
     .download-app h2,
     p {
@@ -860,6 +866,7 @@ hr {
         background-color: #ff6c40;
         color: #fff;
     }
+
     /* Change color for "food app" and "download the bella onoje's food app now on" */
     .banner h4,
     .download-app h2 {
@@ -897,7 +904,7 @@ hr {
         color: white;
     }
 
-   
+
 
     .download-app .button-container {
         display: flex;
@@ -1190,7 +1197,7 @@ hr {
     .hours-table {
         width: 100%;
     }
-    
+
     .desktop-nav {
         display: none;
     }
@@ -1204,20 +1211,21 @@ hr {
 }
 
 @media (max-width: 768px) {
-    
+
     .mobile-nav {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        background-color: #f2f2f2; /* Light gray background */
+        background-color: #f2f2f2;
+        /* Light gray background */
         padding: 5px 10px;
     }
-    
-    
-    
+
+
+
     .nav-bar {
         display: flex;
-        justify-content:end;
+        justify-content: end;
         align-items: center;
         list-style: none;
         position: relative;
@@ -1246,18 +1254,21 @@ hr {
 
     .menu li a {
         padding: 10px;
-        transition: box-shadow 0.3s ease; /* Add transition for box-shadow */
+        transition: box-shadow 0.3s ease;
+        /* Add transition for box-shadow */
     }
 
     .menu li a:hover {
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add box-shadow on hover */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        /* Add box-shadow on hover */
     }
 
 
     .open-menu,
     .close-menu {
         display: block;
-        color: #737373; /* Light gray color */
+        color: #737373;
+        /* Light gray color */
         font-size: 1.5rem;
         cursor: pointer;
         margin-top: -150px;
@@ -1272,6 +1283,7 @@ hr {
         display: block;
     }
 
-    #check {display: none;}
+    #check {
+        display: none;
+    }
 }
-
