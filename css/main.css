@@ -1205,7 +1205,13 @@ hr {
 
 @media (max-width: 768px) {
     
-    
+    .mobile-nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #f2f2f2; /* Light gray background */
+        padding: 5px 10px;
+    }
     
     
     
@@ -1247,12 +1253,14 @@ hr {
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add box-shadow on hover */
     }
 
+
     .open-menu,
     .close-menu {
         display: block;
         color: #737373; /* Light gray color */
         font-size: 1.5rem;
         cursor: pointer;
+        margin-top: -150px;
     }
 
     #check:checked~.menu {
