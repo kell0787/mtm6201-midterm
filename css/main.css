@@ -172,8 +172,12 @@ nav ul li {
     border-radius: 25px;
     width: 10%;
     cursor: pointer;
+    font-weight: 20px;
 }
 
+.bold {
+    font-weight: 30px;
+}
 .playstore:hover {
     background-color: #ff6c40;
     /* Change background color on hover */
